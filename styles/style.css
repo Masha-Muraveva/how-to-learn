@@ -1,3 +1,13 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -5,6 +15,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   }
     
+
   .header {
   height: 100vh;
   min-height: 600px;
@@ -27,11 +38,12 @@
   .logo_place_header {
       position: absolute;
       background-image: url(../images/logo_place_header.svg);
-      background: center cover;
+      background-size: cover;
+      background-position: center;
       background-color: #f2f2f2;
       top: 30px;
       left: 64px;
-      z-index: 1;
+      z-index: 2;
   }
  
   .header__title{
@@ -41,7 +53,7 @@
      font-size: 102px;
      font-weight: 600;
      position: relative;
-     z-index: 1;
+     z-index: 2;
   }
 
   .header__subtitle {
@@ -51,17 +63,18 @@
       position: absolute;
       bottom: 30px;
       left: 64px;
-      z-index: 1;
+      z-index: 2;
       max-width: 388px;
   }
   .header__link {
-      color:#2f80ed;
+      color: #2f80ed;
+      text-decoration: none;
   }
 
   .header__main-ullustration {
       width: 765px;
       height: 608px;
-      z-index: 3;
+      z-index: 1;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -74,11 +87,12 @@
   position: absolute;
   right: 0;
   top: 64px;
-  z-index: 2;
+  z-index: 0;
   }
 
   .content {
-
+    padding: 0;
+    margin: 0;
   }
 
   .description {
@@ -125,8 +139,9 @@
  }
 
  .two-columns__span-accent {
-  font-weight: bold;
-  font-style: 600;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 600;
  }
 
 
@@ -203,7 +218,6 @@
 
  .feynman__subtitle {
   margin: 0 auto 0 auto;
-  padding: auto;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -218,6 +232,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-decoration: none;
  }
 
  .kaufman {
@@ -225,6 +240,8 @@
   color: white;
   padding: 90px 0;
   position: relative;
+  overflow: hidden;
+  z-index: 2;
  }
 
  .section-title_theme-dark {
@@ -234,7 +251,7 @@
   font-weight: 600;
   text-align: center;
   margin: 90px auto 20px auto;
-  z-index: 1;
+  z-index: 2;
  }
 
  .section-subtitle_theme_dark {
@@ -243,25 +260,25 @@
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
  }
 
  .table_theme_dark {
   margin: 0 auto 90px auto;
-  z-index: 1;
+  z-index: 2;
  }
 
  .table__cell_theme_dark {
   margin-top: 80px;
   width: 200px;
-  z-index: 1;
+  z-index: 2;
  }
 
  .table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  z-index: 1;
+  z-index: 2;
  }
 
  .table__text_theme_dark {
@@ -269,28 +286,27 @@
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
-  z-index: 1;
+  z-index: 2;
  }
 
  .kaufman__triangle {
-  display:flex;
   position: absolute;
   top: 0;
   right: -210px;
   width: 877px;
   height: 877px;
-  z-index: 0;
+  z-index: 1;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  /* убрала display: flex из данной коробки, заработало. Корректно ли это? */
  }
 
  .footer {
   min-height: 350px;
   color: white;
   background-color: #1f1f1f;
-  padding: 60px auto 40px auto;
   position: relative;
   justify-content: center;
  }
@@ -301,7 +317,8 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
  }
 
  .footer__column_content_copyright {
@@ -370,7 +387,7 @@
   margin-right: 10px;
  }
 
- 
+ /*
  .footer__columns_warning {
   line-height: 20px;
   font-size: 12px;
@@ -384,5 +401,6 @@
   bottom: 10px;
   margin-top: 0;
  }
+ */
  
  
