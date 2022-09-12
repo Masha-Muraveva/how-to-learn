@@ -360,10 +360,11 @@ vertical-align: baseline;
   right: -210px;
   width: 877px;
   height: 877px;
-  z-index: 1;
+  z-index: -1;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url(../images/kaufman-triangle.svg);
 }
 
 /* 3. Footer */
