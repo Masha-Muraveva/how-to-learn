@@ -1,0 +1,10 @@
+.logo_place_header {
+  background-image: url(/Users/mashka-murashka/Desktop/how-to-learn/images/logo_place_header.svg);
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-color: #f2f2f2;
+  top: 30px;
+  left: 64px;
+  z-index: 2;
+}

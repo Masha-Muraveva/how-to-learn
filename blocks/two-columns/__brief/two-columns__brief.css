@@ -1,0 +1,14 @@
+.two-columns__brief {
+  color:#2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  width: 175px;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: inherit;
+	vertical-align: baseline;
+}
